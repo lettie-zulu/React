@@ -13,7 +13,8 @@ import UserForm from './UserForm';
 
 class App extends Component {
   constructor() {
-    super()
+    super();
+    console.log(firebase);
   }
 
   render() {

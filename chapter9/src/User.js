@@ -79,7 +79,7 @@ class User extends Component {
         return (
             <div>
                 <Link to="/add">
-                    <Button variant="primary">Add</Button>
+                <Button variant="primary" onClick={this.add}>Add</Button>
                 </Link>
 
                 <Table striped bordered hover>
