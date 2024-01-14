@@ -45,8 +45,9 @@
             } else if (action.type === "REMOVE") {
                 return {
                     ...state,
-                    persons: state.persons.filter(person => person.id !==
-                        action.personId)
+                    persons: state.persons.filter(
+                        (person) => person.id !== action.personId)
+                        
                 }
             } else {
                 return state;
@@ -64,7 +65,7 @@
         store.dispatch(addPerson(3, "Gabriel", 6));
         store.dispatch(addPerson(4, "Fred", 8));
         store.dispatch(removePerson(4));
-       
+
 
     </script>
 </body>
